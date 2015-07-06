@@ -4,5 +4,11 @@ cordova-wp8-viewport
 Viewport Cordova plugin for WP8 platform
 
 
-Into device ready
+Usage:
+ function onDeviceReady() {
+ 
+ // put inside onDeviceReady function
 Viewport.fixViewport();
+
+;}
+
