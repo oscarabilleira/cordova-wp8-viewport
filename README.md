@@ -12,7 +12,7 @@ Usage:
 Viewport.fixViewport();
 
 ;}
-'''
+ ```
 
 
 Also include this tags in your index.html
@@ -24,3 +24,4 @@ Also include this tags in your index.html
 ```
 
 Forked from the original plugin lisovin/cordova-wp8-viewport making some changes to make it works properly.
+Information to get the correct size from: http://developerpublish.com/windows-phone-8-1-and-windows-runtime-apps-how-to-15-get-screen-resolution-in-windows-phone-8-1/
