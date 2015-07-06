@@ -14,7 +14,7 @@ using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
 
 using Windows.UI.Popups;
-using Windows.UI.Xaml;
+
 
     
 
