@@ -29,6 +29,7 @@ namespace Cordova.Extension.Commands
 
 
 // Window Size
+public static Window Current { get; }
 var bounds = Current.Bounds;
 var height= bounds.Height;
 var width = bounds.Width;
