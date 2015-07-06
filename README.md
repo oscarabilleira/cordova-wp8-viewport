@@ -1,7 +1,7 @@
 cordova-wp8-viewport
 ====================
 
-WORKING ON IT... NOT FUNCIONAL YET!!
+ORIGINAL BRENCH MODIFIED  (MINUS Nº)
 
 Viewport Cordova plugin for WP8 platform. Give and fix correct height and width viewport for windows phone 8+ devices.
 
