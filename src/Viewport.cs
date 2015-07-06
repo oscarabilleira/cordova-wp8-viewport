@@ -25,8 +25,8 @@ namespace Cordova.Extension.Commands
         
           
           var rawpixelperview = Windows.Graphics.Display.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
-          var Width = Math.Round(Window.Current.Bounds.Width * rawpixelperview);
-          var Height = Math.Round(Window.Current.Bounds.Height * rawpixelperview);
+          var width = Math.Round(Window.Current.Bounds.Width * rawpixelperview);
+          var height = Math.Round(Window.Current.Bounds.Height * rawpixelperview);
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
