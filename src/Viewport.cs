@@ -13,6 +13,16 @@ using WPCordovaClassLib.Cordova;
 using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
 
+using System.Diagnostics;
+using System.Threading.Tasks;
+ using Windows.Devices.Enumeration;
+using Windows.Devices.Sensors;
+using Windows.Foundation;
+using Windows.Media.Capture;
+using Windows.Media.MediaProperties;
+    
+    
+    
 namespace Cordova.Extension.Commands
 {
     /// <summary>
@@ -25,7 +35,7 @@ namespace Cordova.Extension.Commands
         {
         
           
-          var rawpixelperview = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+          var rawpixelperview = Windows.Graphics.Display.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
           var width = Math.Round(Window.Current.Bounds.Width * rawpixelperview);
           var height = Math.Round(Window.Current.Bounds.Height * rawpixelperview);
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
