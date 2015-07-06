@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Windows;
-using Windows.Graphics.Display;
+using System.Windows.Display;
 using System.Windows.Media;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
@@ -12,6 +12,9 @@ using Microsoft.Phone.Info;
 using WPCordovaClassLib.Cordova;
 using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
+
+
+
 
 using Windows.UI.Popups;
 
