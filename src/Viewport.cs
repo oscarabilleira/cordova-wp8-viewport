@@ -37,7 +37,7 @@ var width = bounds.Width;
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
           
           
-
+WindowSize.Text = string.Format("H {0}  x  W {1}", bounds.Height, bounds.Width);
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
     }
