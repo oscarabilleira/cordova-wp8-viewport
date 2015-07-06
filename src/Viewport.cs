@@ -15,12 +15,13 @@ using WPCordovaClassLib.Cordova.JSON;
 
 using System.Diagnostics;
 using System.Threading.Tasks;
- using Windows.Devices.Enumeration;
 using Windows.Devices.Sensors;
 using Windows.Foundation;
-using Windows.Media.Capture;
-using Windows.Media.MediaProperties;
+
     
+
+
+
     
     
 namespace Cordova.Extension.Commands
