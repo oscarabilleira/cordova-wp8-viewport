@@ -22,6 +22,10 @@ using Windows.ApplicationModel;
 using Microsoft.Phone.Tasks;
 
 
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+
+
     
 
 
