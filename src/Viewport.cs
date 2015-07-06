@@ -39,9 +39,12 @@ int height = (int)Math.Ceiling(content.ActualHeight * scale);
 
 int width = (int)Math.Ceiling(content.ActualWidth * scale);
 
-
     
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
+          
+          
+          MessageDialog messageDialog = new MessageDialog(result);
+await messageDialog.ShowAsync();
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
