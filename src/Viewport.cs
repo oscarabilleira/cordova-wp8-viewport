@@ -40,7 +40,7 @@ var height = Window.Current.Bounds.Height * (int)DisplayProperties.ResolutionSca
     var dpi = DisplayInformation.GetForCurrentView().RawDpiY;
  
 width= Math.Sqrt(Math.Pow(width / dpi, 2).ToString();
-height=Math.Pow(height / dpi, 2).ToString());
+height=Math.Pow(height / dpi, 2).ToString();
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
           
