@@ -43,9 +43,9 @@ namespace Cordova.Extension.Commands
             
 
 
-var scaleFactor = Application.Current.Host.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
-string width = Application.Current.Host.window.Current.Bounds.Width * scaleFactor;
-string height= Application.Current.Host.window.Current.Bounds.Height * scaleFactor;
+var scaleFactor = System.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+string width = System..window.Current.Bounds.Width * scaleFactor;
+string height= System..Current.Host.window.Current.Bounds.Height * scaleFactor;
 
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
