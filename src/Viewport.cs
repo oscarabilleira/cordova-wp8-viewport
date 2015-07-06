@@ -23,8 +23,8 @@ namespace Cordova.Extension.Commands
         public void getViewport(string options)
         {
             var resolution = (Size)DeviceExtendedProperties.GetValue("PhysicalScreenResolution");
-            var width = resolution.Width.ToString();
-            var height = resolution.Height.ToString();
+            var width = Application.Current.Host.Content.ActualWidth.ToString();
+            var height = Application.Current.Host.Content.ActualHeight.ToString();
             var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
