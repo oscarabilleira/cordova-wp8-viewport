@@ -13,6 +13,8 @@ using WPCordovaClassLib.Cordova;
 using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
 
+using Windows.UI.Popups;
+using Windows.UI.Xaml;
 
     
 
@@ -30,21 +32,21 @@ namespace Cordova.Extension.Commands
         /// </summary>
         public void getViewport(string options)
         {
-        
-         var content = Application.Current.Host.Content;
-
-double scale = (double)content.ScaleFactor / 100;
-
-int height = (int)Math.Ceiling(content.ActualHeight * scale);
-
-int width = (int)Math.Ceiling(content.ActualWidth * scale);
-
     
+
+var width = Window.Current.Bounds.Width * (int)DisplayProperties.ResolutionScale / 100;
+var height = Window.Current.Bounds.Height * (int)DisplayProperties.ResolutionScale / 100;
+
+    var dpi = DisplayInformation.GetForCurrentView().RawDpiY;
+ 
+width= Math.Sqrt(Math.Pow(width / dpi, 2).ToString();
+height=Math.Pow(height / dpi, 2).ToString());
+ 
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
           
           
-          MessageDialog messageDialog = new MessageDialog(result);
-await messageDialog.ShowAsync();
+          MessageDialog message = new MessageDialog(result);
+await message.ShowAsync();
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
