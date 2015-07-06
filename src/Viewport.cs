@@ -29,15 +29,14 @@ namespace Cordova.Extension.Commands
 
 
 // Window Size
-var bounds = Window.Current.Bounds;
+var bounds = Current.Bounds;
 var height= bounds.Height;
 var width = bounds.Width;
 
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
           
-          
-WindowSize.Text = string.Format("H {0}  x  W {1}", bounds.Height, bounds.Width);
+
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
     }
