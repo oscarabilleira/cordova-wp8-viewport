@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-      id="com.lisovin.cordova.wp8.viewport"
+      id="com.oscarabilleira.cordova.wp8.viewport"
       version="1.0.0">
     <name>Viewport</name>
     <description>Viewport Windows Phone 8 plugin.</description>
