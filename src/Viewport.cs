@@ -6,6 +6,7 @@ using System;
     using System.Windows;
     using System.Windows.Media;
     using Windows.Graphics.Display;
+    using System.Windows.Browser;
     using Microsoft.Phone.Controls;
     using Microsoft.Phone.Shell;
     using Microsoft.Phone.Info;
@@ -29,10 +30,19 @@ namespace Cordova.Extension.Commands
 
 
 // Window Size
-public static Window Current { get; }
-var bounds = Current.Bounds;
+public static Window Current { 
+    get
+    {
+        
+        var bounds = Current.Bounds;
 var height= bounds.Height;
 var width = bounds.Width;
+        
+    }
+;
+    
+}
+
 
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
