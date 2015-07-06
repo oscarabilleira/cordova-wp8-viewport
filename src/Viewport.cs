@@ -10,9 +10,7 @@ using System.Windows.Media;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Info;
-using WPCordovaClassLib.Cordova;
-using WPCordovaClassLib.Cordova.Commands;
-using WPCordovaClassLib.Cordova.JSON;
+
 
 
 using System.Threading.Tasks;
@@ -21,9 +19,9 @@ using Windows.UI.Core;
 using Windows.ApplicationModel;
 using Microsoft.Phone.Tasks;
 
-
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
+using WPCordovaClassLib.Cordova;
+using WPCordovaClassLib.Cordova.Commands;
+using WPCordovaClassLib.Cordova.JSON;
 
 
     
