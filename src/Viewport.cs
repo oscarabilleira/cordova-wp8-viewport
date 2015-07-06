@@ -4,7 +4,7 @@ using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Windows;
-using System.Display;
+using Windows.Graphics.Display
 using System.Windows.Media;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
