@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
       id="com.oscarabilleira.cordova.wp8.viewport"
-      version="1.0.57">
+      version="1.0.58">
     <name>Viewport</name>
     <description>Viewport Cordova plugin for WP8 platform. Give and fix correct height and width viewport for windows phone 8+ devices.</description>
     <license>MIT</license>
