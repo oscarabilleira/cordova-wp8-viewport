@@ -25,7 +25,7 @@ namespace Cordova.Extension.Commands
         {
         
           
-          var rawpixelperview = Windows.Graphics.Display.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+          var rawpixelperview = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
           var width = Math.Round(Window.Current.Bounds.Width * rawpixelperview);
           var height = Math.Round(Window.Current.Bounds.Height * rawpixelperview);
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
