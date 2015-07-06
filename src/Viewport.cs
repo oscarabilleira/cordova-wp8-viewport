@@ -1,12 +1,15 @@
-using System;
+
+
+ 
+ using System;
     using System.Collections.Generic;
     using System.IO.IsolatedStorage;
     using System.Linq;
     using System.Runtime.Serialization;
     using System.Windows;
     using System.Windows.Media;
+     using System.Windows.Browser;
     using Windows.Graphics.Display;
-    using System.Windows.Browser;
     using Microsoft.Phone.Controls;
     using Microsoft.Phone.Shell;
     using Microsoft.Phone.Info;
@@ -15,7 +18,7 @@ using System;
     using WPCordovaClassLib.Cordova.JSON;
 
 
-    
+
 namespace Cordova.Extension.Commands
 {
     /// <summary>
@@ -26,32 +29,19 @@ namespace Cordova.Extension.Commands
         /// </summary>
         public void getViewport(string options)
         {
-            
 
 
-// Window Size
-public static Window Current { 
-    get
-    {
-        
-        var bounds = Current.Bounds;
-var height= bounds.Height;
-var width = bounds.Width;
-        
-    }
-;
-    
-}
+
+var scaleFactor =DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+string width = Current.Bounds.Width * scaleFactor;
+string height= Current.Host.window.Current.Bounds.Height * scaleFactor;
 
 
- 
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
-          
+
+
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
     }
 }
-
-
-
