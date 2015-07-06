@@ -37,19 +37,17 @@ namespace Cordova.Extension.Commands
         {
     
 
-var width = Window.Current.Bounds.Width * (int)DisplayProperties.ResolutionScale / 100;
-var height = Window.Current.Bounds.Height * (int)DisplayProperties.ResolutionScale / 100;
+var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+string width = Window.Current.Bounds.Width * scaleFactor;
+string height= Window.Current.Bounds.Height * scaleFactor;
 
-    var dpi = DisplayInformation.GetForCurrentView().RawDpiY;
- 
-width= Math.Sqrt(Math.Pow(width / dpi, 2)).ToString();
-height=Math.Pow(height / dpi, 2).ToString();
+MessageDialog messageDialog = new MessageDialog(width+' '+height);
+await messageDialog.ShowAsync();
+
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
           
           
-          MessageDialog message = new MessageDialog(result);
-await message.ShowAsync();
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
