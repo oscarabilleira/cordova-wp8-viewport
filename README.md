@@ -25,4 +25,4 @@ Also include this tags in your index.html
 
 Forked from the original plugin lisovin/cordova-wp8-viewport making some changes to make it works properly.
 Information to get the correct size from:
-http://mikaelkoskinen.net/post/physical-screen-size-windows-81-store-app
+http://bsubramanyamraju.blogspot.com.es/2014/07/windowsphone-80-vs-windowsphone81.html
