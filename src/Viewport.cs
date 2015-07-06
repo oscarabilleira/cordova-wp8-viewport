@@ -37,7 +37,7 @@ namespace Cordova.Extension.Commands
         {
     
 
-var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+var scaleFactor = Windows.Graphics.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
 string width = Window.Current.Bounds.Width * scaleFactor;
 string height= Window.Current.Bounds.Height * scaleFactor;
 
