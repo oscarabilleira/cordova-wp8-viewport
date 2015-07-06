@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
+using System.Text;
 using System.Runtime.Serialization;
 using System.Windows;
 using Windows.Graphics.Display;
@@ -14,9 +15,11 @@ using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
 
 
-
-
-using Windows.UI.Popups;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.UI.Core;
+using Windows.ApplicationModel;
+using Microsoft.Phone.Tasks;
 
 
     
@@ -38,12 +41,9 @@ namespace Cordova.Extension.Commands
             
 
 
-var scaleFactor = Windows.Graphics.Display.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
 string width = Window.Current.Bounds.Width * scaleFactor;
 string height= Window.Current.Bounds.Height * scaleFactor;
-
-MessageDialog messageDialog = new MessageDialog(width+' '+height);
-await messageDialog.ShowAsync();
 
  
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
