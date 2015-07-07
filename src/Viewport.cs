@@ -37,12 +37,13 @@ namespace Cordova.Extension.Commands
         public void getViewport(string options)
         {
 
-public static DisplayInformation GetForCurrentView();
 
+public static DisplayInformation
+{
 var scaleFactor =DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
 string width = Current.Bounds.Width * scaleFactor;
 string height= Current.Host.window.Current.Bounds.Height * scaleFactor;
-
+;}
 
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
