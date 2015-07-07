@@ -38,12 +38,13 @@ namespace Cordova.Extension.Commands
         {
 
 
-public static DisplayInformation
-{
-var scaleFactor =DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+ 
+ 
+var scaleFactor =Windows.Graphics.Display.DisplayInformation.getForCurrentView().RawPixelsPerViewPixel;
 string width = Current.Bounds.Width * scaleFactor;
 string height= Current.Host.window.Current.Bounds.Height * scaleFactor;
-;}
+
+
 
           var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
