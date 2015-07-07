@@ -2,6 +2,9 @@
 var ignore = function () {};
 
 module.exports = {
+    
+    OnScreenLock(SupportedPageOrientation.Portrait);
+    
     getViewport: function (onSuccess, onError) {
         exec(onSuccess || ignore, onError || ignore, "Viewport", "getViewport", []);
     },
