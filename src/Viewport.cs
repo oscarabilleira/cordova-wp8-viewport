@@ -15,11 +15,7 @@ using WPCordovaClassLib.Cordova.JSON;
 
 namespace Cordova.Extension.Commands
 {
-    /// <summary>
-    /// </summary>
-
-
-    
+ 
     
         /// <summary>
         /// </summary>
