@@ -1,9 +1,3 @@
-
-
- 
-
-
-
 using System;
 using System.Net;
 using System.IO;
@@ -19,12 +13,17 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using System.Windows.Graphics.Display;
+using Windows.Graphics.Display;
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Threading;
+using WPCordovaClassLib.Cordova;
+using WPCordovaClassLib.Cordova.Commands;
+using WPCordovaClassLib.Cordova.JSON;
+
+
 
 
 namespace Cordova.Extension.Commands
