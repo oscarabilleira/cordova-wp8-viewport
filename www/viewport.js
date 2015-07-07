@@ -11,6 +11,8 @@ module.exports = {
             var vpStyle = document.createElement("style");
             vpStyle.appendChild(document.createTextNode("@-ms-viewport {height:" + vp.height + "px}"));
             document.getElementsByTagName("head")[0].appendChild(vpStyle);
+            vpStyle.appendChild(document.createTextNode("@-ms-viewport {width:" + vp.width + "px}"));
+            document.getElementsByTagName("head")[0].appendChild(vpStyle);
             onSuccess();
         }, onError);
     }
