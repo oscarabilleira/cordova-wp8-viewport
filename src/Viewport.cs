@@ -25,7 +25,7 @@ namespace Cordova.Extension.Commands
         {
             var resolution = (Size)DeviceExtendedProperties.GetValue("PhysicalScreenResolution");
                 var height ="1000";
-                var width ="380"
+                var width ="380";
         
             var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
