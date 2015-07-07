@@ -1,22 +1,30 @@
 
 
  
- using System;
-    using System.Collections.Generic;
-    using System.IO.IsolatedStorage;
-    using System.Linq;
-    using System.Runtime.Serialization;
-    using System.Windows;
-    using System.Windows.Media;
-     using System.Windows.Browser;
-    using Windows.Graphics.Display;
-    using Microsoft.Phone.Controls;
-    using Microsoft.Phone.Shell;
-    using Microsoft.Phone.Info;
-    using WPCordovaClassLib.Cordova;
-    using WPCordovaClassLib.Cordova.Commands;
-    using WPCordovaClassLib.Cordova.JSON;
 
+
+
+using System;
+using System.Net;
+using System.IO;
+using Microsoft.Phone.Controls;
+using Microsoft.Phone.Notification;
+using Microsoft.Phone.Shell;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Ink;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.Windows.Graphics.Display;
+using System.Runtime.Serialization;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Threading;
 
 
 namespace Cordova.Extension.Commands
