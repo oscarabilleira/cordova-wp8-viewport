@@ -17,16 +17,8 @@ namespace Cordova.Extension.Commands
 {
     /// <summary>
     /// </summary>
-    public class Viewport: BaseCommand
-    {
-        
-           public void HandleScreenLock(SupportedPageOrientation orientation)
-    {
-        this.Dispatcher.BeginInvoke((Action)(() =>
-        {
-            this.SupportedOrientations = orientation;
-        }));
-    }
+
+
     
     
         /// <summary>
