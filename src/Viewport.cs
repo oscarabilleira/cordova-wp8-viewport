@@ -24,8 +24,8 @@ namespace Cordova.Extension.Commands
         public void getViewport(string options)
         {
             var resolution = (Size)DeviceExtendedProperties.GetValue("PhysicalScreenResolution");
-                var height ="413";
-            var width ="700"
+                var height ="1000";
+                var width ="380"
         
             var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
