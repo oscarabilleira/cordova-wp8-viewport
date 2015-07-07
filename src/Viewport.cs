@@ -13,21 +13,26 @@ using WPCordovaClassLib.Cordova;
 using WPCordovaClassLib.Cordova.Commands;
 using WPCordovaClassLib.Cordova.JSON;
 
+
+
+
 namespace Cordova.Extension.Commands
 {
- 
-    
+    /// <summary>
+    /// </summary>
+    public class Viewport: BaseCommand
+    {
         /// <summary>
         /// </summary>
         public void getViewport(string options)
         {
             var resolution = (Size)DeviceExtendedProperties.GetValue("PhysicalScreenResolution");
-                var height ="513";
+           var height ="513";
                 var width ="380";
-        
             var result = "{\"width\":\"" + width + "\",\"height\":\"" + height + "\"}";
 
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK, result));
         }
     }
 }
+
